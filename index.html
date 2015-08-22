@@ -23,18 +23,24 @@
                 <div class="jumbotron">
                     <h1>Youtube Playlist Editor</h1>
                 </div>
-                <input type="text"  id="urlInput"/>
-                <button type="button" name="addLink" onclick="youtube_parser(document.getElementById('urlInput').value)">Add Video</button>
+                <input type="text" class="form-control"  id="urlInput"/>
+                <button type="button" name="addLink" class='btn btn-default' onclick="youtube_parser(document.getElementById('urlInput').value)">Add Video</button>
             </div>
         </div>
         <br />
         <div class="row">
-            <div class="col-sm-4">
+            <div class="col-sm-8">
                 <h1 >Playlist</h1>
                 <ul id="playlist">
+                    <button id="n1a7o44WxNo" class="btn btn-default" onclick="ytLink('n1a7o44WxNo')">Zedd - Beautiful Now ft. Jon Bellion</button>
+                    <button id="n1a7o44WxNorm" class="btn btn-default" onclick="rmytLink('n1a7o44WxNo')">Remove</button>
+                    <button id="RgKAFK5djSk" class="btn btn-default" onclick="ytLink('RgKAFK5djSk')">Wiz Khalifa - See You Again ft. Charlie Puth [Official Video] Furious 7 Soundtrack</button>
+                    <button id="RgKAFK5djSkrm" class="btn btn-default" onclick="rmytLink('RgKAFK5djSk')">Remove</button>
+                    <button id="09R8_2nJtjg" class="btn btn-default" onclick="ytLink('09R8_2nJtjg')">Maroon 5 - Sugar</button>
+                    <button id="09R8_2nJtjgrm" class="btn btn-default" onclick="rmytLink('09R8_2nJtjg')">Remove</button>
                 </ul>
              </div>  
-            <div class="col-sm-8">
+            <div class="col-sm-4">
                 <iframe width="420" height="315" id="ytPlayer"
                         src="https://www.youtube.com/embed/n1a7o44WxNo">
 
@@ -43,7 +49,13 @@
         </div>
     </div>
 
-   
+    <script>
+    //Initial list
+    listofURL.push('n1a7o44WxNo');
+    listofURL.push('RgKAFK5djSk');
+    listofURL.push('09R8_2nJtjg');
+
+    </script>
 </body>
 
 </html>
