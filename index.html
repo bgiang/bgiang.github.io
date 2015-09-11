@@ -1,60 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
 
-<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Youtube Playlist</title>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-
-    <!-- Latest compiled and minified JavaScript -->
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script src="index.js"></script>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- This is how you would link your custom stylesheet -->
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="js/vendor/modernizr.js"></script>
+    <title>Project Showcase</title>
 </head>
 
 <body>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="jumbotron">
-                    <h1>Youtube Playlist Editor</h1>
-                </div>
-                <input type="text" class="form-control"  id="urlInput"/>
-                <button type="button" name="addLink" class='btn btn-default' onclick="youtube_parser(document.getElementById('urlInput').value)">Add Video</button>
-            </div>
-        </div>
-        <br />
-        <div class="row">
-            <div class="col-sm-8">
-                <h1 >Playlist</h1>
-                <ul id="playlist">
-                    <button id="n1a7o44WxNo" class="btn btn-default" onclick="ytLink('n1a7o44WxNo')">Zedd - Beautiful Now ft. Jon Bellion</button>
-                    <button id="n1a7o44WxNorm" class="btn btn-default" onclick="rmytLink('n1a7o44WxNo')">Remove</button>
-                    <button id="RgKAFK5djSk" class="btn btn-default" onclick="ytLink('RgKAFK5djSk')">Wiz Khalifa - See You Again ft. Charlie Puth [Official Video] Furious 7 Soundtrack</button>
-                    <button id="RgKAFK5djSkrm" class="btn btn-default" onclick="rmytLink('RgKAFK5djSk')">Remove</button>
-                    <button id="09R8_2nJtjg" class="btn btn-default" onclick="ytLink('09R8_2nJtjg')">Maroon 5 - Sugar</button>
-                    <button id="09R8_2nJtjgrm" class="btn btn-default" onclick="rmytLink('09R8_2nJtjg')">Remove</button>
+    <nav class="top-bar" data-topbar role="navigation">
+        <ul clas="title-area">
+            <li class="name">
+                <h1><a href="#">Project Showcase</a></h1>
+            </li>
+        </ul>
+    </nav>
+    <br>
+    <ul class="tabs" data-tab>
+        <li class="tab-title active"><a href="#project1">Photo Jigsaw</a></li>
+        <li class="tab-title"><a href="#project2">TA Office</a></li>
+        <li class="tab-title"><a href="#project3">Youtube Playlist</a></li>
+    </ul>
+    <div class="tabs-content">
+        <div class="content active" id="project1">
+            <div class="row">
+                <ul class="pricing-table">
+                    <li class="title">
+                        <p>Photo Jigsaw Android Application</p>
+                        <iframe width="720" height="480" src="//www.youtube.com/embed/W767DMvigHk" frameborder="0" allowfullscreen></iframe>
+                    </li>
+                    <li class="price">Fall 2014</li>
+                    <li class="description">
+                        <p>An android application where user can use photo on their android device to make a jigsaw puzzle.</p>
+                        <p>
+                            Created by: Brian Giang, Jingyi Luo, Ekaterina Osipova, Rasmeyleina Samel
+                        </p>
+                    </li>
+                    <li class="bullet-item">
+                        Multilayering
+                    </li>
+                    <li class="bullet-item">
+                        Multiplayer
+                    </li>
+                    <li class="bullet-item">
+                        Customization
+                    </li>
+                    <li class="cta-button"><a class="button" href="https://github.com/bgiang/PuzzleJigSaw">Project Link</a></li>
                 </ul>
-             </div>  
-            <div class="col-sm-4">
-                <iframe width="420" height="315" id="ytPlayer"
-                        src="https://www.youtube.com/embed/n1a7o44WxNo">
-
-                </iframe>
             </div>
         </div>
+        <div class="content" id="project2">
+            <div class="row">
+
+                <ul class="pricing-table">
+                    <li class="title">
+                        <p>TA Office Hour Web Application</p>
+                        <!-- copy and paste. Modify height and width if desired. -->
+                        <object id="scPlayer" width="720" height="707" type="application/x-shockwave-flash" data="http://content.screencast.com/users/bgiang125/folders/Default/media/58839298-d299-440d-843d-867959c44146/bootstrap.swf">
+                            <param name="movie" value="http://content.screencast.com/users/bgiang125/folders/Default/media/58839298-d299-440d-843d-867959c44146/bootstrap.swf" />
+                            <param name="quality" value="high" />
+                            <param name="bgcolor" value="#FFFFFF" />
+                            <param name="flashVars" value="thumb=http://content.screencast.com/users/bgiang125/folders/Default/media/58839298-d299-440d-843d-867959c44146/FirstFrame.jpg&containerwidth=944&containerheight=927&content=http://content.screencast.com/users/bgiang125/folders/Default/media/58839298-d299-440d-843d-867959c44146/TAOfficeDemoSystem.swf&blurover=false" />
+                            <param name="allowFullScreen" value="true" />
+                            <param name="scale" value="showall" />
+                            <param name="allowScriptAccess" value="always" />
+                            <param name="base" value="http://content.screencast.com/users/bgiang125/folders/Default/media/58839298-d299-440d-843d-867959c44146/" /> Unable to display content. Adobe Flash is required.
+                        </object>
+                    </li>
+                    <li class="price">Summer 2015</li>
+                    <li class="description">
+                        <p>A simple web application that allow student and teaching assistant to communicate with each other through a message board and keeping track of TA office hours
+                        </p>
+                        <p>
+                            Created by: Brian Giang, Luping Zhou,Yali Li
+                        </p>
+                    </li>
+                    <li class="bullet-item">
+                        Registration
+                    </li>
+                    <li class="bullet-item">
+                        TA Scheduling
+                    </li>
+                    <li class="bullet-item">
+                        Message Board
+                    </li>
+                    <li class="bullet-item">
+                        TA Search
+                    </li>
+                    <li class="cta-button"><a class="button" href="https://github.com/bgiang/TAOffice">Project Link</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content" id="project3">
+            <div class="row">
+                <ul class="pricing-table">
+                    <li class="title">
+                        Youtube Playlist
+                    </li>
+                    <li class="price">
+                        Summer 2015
+                    </li>
+                    <li class="description">
+                        A simple youtube playlist where user can add youtube link ad remove link to create their own playlist without logging in. It use the Youtube API to fetch video information in order to create the playlist.</li>
+                     <li class="cta-button"><a class="button" href="youtube.html">Project Link</a></li>
+                </ul>
+            </div>
+        </div>
+
     </div>
 
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
     <script>
-    //Initial list
-    listofURL.push('n1a7o44WxNo');
-    listofURL.push('RgKAFK5djSk');
-    listofURL.push('09R8_2nJtjg');
-
+        $(document).foundation();
     </script>
 </body>
 
