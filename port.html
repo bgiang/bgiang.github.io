@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- This is how you would link your custom stylesheet -->
+    <link rel="stylesheet" href="css/portfolio.css">
+    <script src="js/vendor/modernizr.js"></script>
+    <title>Project Showcase</title>
+</head>
+
+<body>
+    <nav class="top-bar" data-topbar role="navigation">
+        <ul class="title-area">
+            <li class="name">
+                <h1><a href="#">Brian Giang</a></h1>
+            </li>
+
+        </ul>
+        <section class="top-bar-section">
+            <ul class="right">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="port.html">Project</a></li>
+            </ul>
+
+        </section>
+    </nav>
+    <div id="header">
+        <img src="img/BannerHeader.png" class="header">
+    </div>
+    
+    <div id="content">
+        <ul class="tabs" data-tab>
+            <li class="tab-title active"><a href="#project1">Photo Jigsaw</a></li>
+            <li class="tab-title"><a href="#project2">TA Office</a></li>
+            <li class="tab-title"><a href="#project3">Youtube Playlist</a></li>
+        </ul>
+
+        <div class="tabs-content">
+            <div class="content active" id="project1">
+                <div class="row">
+                    <ul class="pricing-table">
+                        <li class="title">
+                            <p>Photo Jigsaw Android Application</p>
+                            <iframe width="720" height="480" src="//www.youtube.com/embed/W767DMvigHk" frameborder="0" allowfullscreen></iframe>
+                        </li>
+                        <li class="price">Fall 2014</li>
+                        <li class="description">
+                            <p>An android application where user can use photo on their android device to make a jigsaw puzzle.</p>
+                            <p>
+                                Created by: Brian Giang, Jingyi Luo, Ekaterina Osipova, Rasmeyleina Samel
+                            </p>
+                        </li>
+                        <li class="bullet-item">
+                            Multilayering
+                        </li>
+                        <li class="bullet-item">
+                            Multiplayer
+                        </li>
+                        <li class="bullet-item">
+                            Customization
+                        </li>
+                        <li class="cta-button"><a class="button" href="https://github.com/bgiang/PuzzleJigSaw">Project Link</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content" id="project2">
+                <div class="row">
+
+                    <ul class="pricing-table">
+                        <li class="title">
+                            <p>TA Office Hour Web Application</p>
+                            <!-- copy and paste. Modify height and width if desired. -->
+                            <object id="scPlayer" width="720" height="707" type="application/x-shockwave-flash" data="http://content.screencast.com/users/bgiang125/folders/Default/media/58839298-d299-440d-843d-867959c44146/bootstrap.swf">
+                                <param name="movie" value="http://content.screencast.com/users/bgiang125/folders/Default/media/58839298-d299-440d-843d-867959c44146/bootstrap.swf" />
+                                <param name="quality" value="high" />
+                                <param name="bgcolor" value="#FFFFFF" />
+                                <param name="flashVars" value="thumb=http://content.screencast.com/users/bgiang125/folders/Default/media/58839298-d299-440d-843d-867959c44146/FirstFrame.jpg&containerwidth=944&containerheight=927&content=http://content.screencast.com/users/bgiang125/folders/Default/media/58839298-d299-440d-843d-867959c44146/TAOfficeDemoSystem.swf&blurover=false" />
+                                <param name="allowFullScreen" value="true" />
+                                <param name="scale" value="showall" />
+                                <param name="allowScriptAccess" value="always" />
+                                <param name="base" value="http://content.screencast.com/users/bgiang125/folders/Default/media/58839298-d299-440d-843d-867959c44146/" /> Unable to display content. Adobe Flash is required.
+                            </object>
+                        </li>
+                        <li class="price">Summer 2015</li>
+                        <li class="description">
+                            <p>A simple web application that allow student and teaching assistant to communicate with each other through a message board and keeping track of TA office hours
+                            </p>
+                            <p>
+                                Created by: Brian Giang, Luping Zhou,Yali Li
+                            </p>
+                        </li>
+                        <li class="bullet-item">
+                            Registration
+                        </li>
+                        <li class="bullet-item">
+                            TA Scheduling
+                        </li>
+                        <li class="bullet-item">
+                            Message Board
+                        </li>
+                        <li class="bullet-item">
+                            TA Search
+                        </li>
+                        <li class="cta-button"><a class="button" href="https://github.com/bgiang/TAOffice">Project Link</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content" id="project3">
+                <div class="row">
+                    <ul class="pricing-table">
+                        <li class="title">
+                            Youtube Playlist
+                        </li>
+                        <li class="price">
+                            Summer 2015
+                        </li>
+                        <li class="description">
+                            A simple youtube playlist where user can add youtube link ad remove link to create their own playlist without logging in. It use the Youtube API to fetch video information in order to create the playlist.</li>
+                        <li class="cta-button"><a class="button" href="youtube.html">Project Link</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="footer">
+
+            <h3>
+            Contact
+            </h3>
+            <h4>Email: brianngiang@gmail.com</h4>
+
+        </div>
+    </div>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+        $(document).foundation();
+    </script>
+</body>
+
+</html>
